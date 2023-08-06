@@ -1,0 +1,128 @@
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+
+    /*1. Create a big box with black background so that our borders get black color*/
+    .board{
+        display:grid;
+        background-color: black; 
+        width:748px;
+        height:748px;
+        grid-template-columns: 320px 198px 153px 50px;
+        grid-template-rows: 414px 9px 130px 10px 155px 10px 20px;
+  
+        grid-column-gap:9px;
+      }
+  
+      .red-box{
+        background-color:#E72F24;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+      }
+  
+      .white-top-right-box{
+        background-color:#F0F1EC;
+        grid-column: 2 / span 3;
+        grid-row: 1 / 2;
+      }
+  
+      .white-middle-left-box{
+        background-color:#F0F1EC;
+        grid-column: 1 / 2;
+        grid-row: 3 / span 3;
+      }
+      
+      .white-middle-right-box{
+        background-color:#F0F1EC;
+        grid-column: 2 / span 2;
+        grid-row: 3 / 6;
+      }
+  
+      .blue-box{
+        background-color:#004592;
+        grid-column: -2 / -1;
+        grid-row: 3 / 4 ;
+       
+      }
+  
+  
+      .white-bottom-right-box{
+        background-color:#F0F1EC;
+        grid-column: -2 / -1 ;
+        grid-row: -4 / -1;
+      }
+      
+      .black-box{
+        background-color:#232629;
+        grid-column: -3 / -2 ;
+        grid-row: -2 / -1;
+      }
+  
+      .yellow-box{
+        background-color:#F9D01E;
+        grid-column: 2 / 3;
+        grid-row: -2 / -1;
+      }
+  
+  
+      .white-bottom-left-box{
+        background-color:#F0F1EC;
+        grid-column: 1 / 2;
+        grid-row:  -2 / -1 ;
+      }
+  
+  
+  
+      .row-gap-1{
+        background-color: black;
+        grid-column: 1 / -1;
+        grid-row:  2 / 3 ;
+      }
+  
+      .row-gap-2-middle-left{
+        background-color: #F0F1EC;
+        grid-column: 1 / 2;
+        grid-row:  4 / 5 ;
+      }
+  
+      .row-gap-2-middle-center{
+        background-color: #F0F1EC;
+        grid-column: 2 / 4;
+        grid-row:  4 / 5 ;
+      }
+  
+      .row-gap-2-middle-right{
+        background-color: black;
+        grid-column: 4 / 5;
+        grid-row:  4 / 5 ;
+      }
+  
+  
+      .row-gap-3-left{
+        background-color: black;
+        grid-column: 1 / 2;
+        grid-row:  -3 / -2 ;
+      }
+  
+      .row-gap-3-center{
+        background-color: black;
+        grid-column: 2 / 4;
+        grid-row:  -3 / -2 ;
+      }
+  
+      .row-gap-3-right{
+        background-color: #F0F1EC;
+        grid-column: 4 / 5;
+        grid-row:  -3 / -2 ;
+      }
+  
